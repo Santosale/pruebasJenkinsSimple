@@ -19,23 +19,23 @@
     <plugins>
       <plugin>
 	  
-	  <profiles>
-        <profile>
-            <id>webapp</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <packaging.type>war</packaging.type>
-            </properties>
-        </profile>
-        <profile>
-            <id>batch</id>
-            <properties>
-                <packaging.type>jar</packaging.type>
-            </properties>
-                </profile>
-          </profiles>
+	    <profiles>
+			<profile>
+				<id>webapp</id>
+				<activation>
+					<activeByDefault>true</activeByDefault>
+				</activation>
+				<properties>
+					<packaging.type>war</packaging.type>
+				</properties>
+			</profile>
+			<profile>
+				<id>batch</id>
+				<properties>
+					<packaging.type>jar</packaging.type>
+				</properties>
+			</profile>
+	    </profiles>
         <!-- Build an executable JAR -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
